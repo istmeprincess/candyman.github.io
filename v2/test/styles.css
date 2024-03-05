@@ -87,7 +87,7 @@ body {
 }
 
 .content-section p {
-  color: #ff66b2;
+  /*color: #ff66b2;*/
   transition: color 0.3s;
 }
 

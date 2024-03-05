@@ -2,15 +2,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Caveat', cursive;
-  background-color: #f9f9f9; /* Light gray background */
+  background: linear-gradient(135deg, #ff66b2, #ffd700); /* Cute candies gradient background */
+  color: #333; /* Dark gray text color */
 }
 
 /* Navbar Styles */
 .navbar {
-  background-color: #ff66b2; /* Pink */
+  background-color: #fff; /* White navbar background */
   padding: 15px;
   text-align: center;
-  color: #fff;
+  color: #ff66b2; /* Pink text color */
   font-size: 1.5rem;
   border-bottom-left-radius: 20px; /* Rounded corners */
   border-bottom-right-radius: 20px; /* Rounded corners */
@@ -19,6 +20,7 @@ body {
 .logo {
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
+  color: #ff66b2; /* Pink logo color */
 }
 
 .nav-items {
@@ -35,7 +37,7 @@ body {
 
 .nav-items a {
   text-decoration: none;
-  color: #fff;
+  color: #ff66b2; /* Pink text color */
   font-weight: bold;
   font-size: 1rem;
   border-radius: 10px; /* Rounded corners */
@@ -44,8 +46,8 @@ body {
 }
 
 .nav-items a:hover {
-  background-color: #ff3385; /* Lighter pink on hover */
-  color: #fff;
+  background-color: #ff66b2; /* Pink background on hover */
+  color: #fff; /* White text on hover */
 }
 
 .candy-container {
@@ -57,7 +59,6 @@ body {
 
 .candy-content {
   text-align: center;
-  color: #333; /* Dark gray text color */
   max-width: 600px; /* Added maximum width for better readability */
   margin: 0 auto; /* Centering the content */
 }
@@ -78,12 +79,12 @@ body {
 
 /* Heading Color Change on Hover */
 .content-section h2 {
-  color: #333; /* Default heading color */
+  color: #ff66b2; /* Pink heading color */
   transition: color 0.3s; /* Smooth transition for heading color */
 }
 
 .content-section:hover h2 {
-  color: #ff66b2; /* Pink heading color on hover */
+  color: #333; /* Dark gray heading color on hover */
 }
 
 /* Candy UI Placeholder Styles */
@@ -103,8 +104,8 @@ body {
 
 /* Footer Styles */
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #fff; /* White footer background */
+  color: #333; /* Dark gray text color */
   text-align: center;
   padding: 20px; /* Increased padding for better separation */
   position: relative; /* Position relative for z-index to work */

@@ -132,6 +132,15 @@ body {
 
 .candy-ui-placeholder:hover {
   background-color: rgba(255, 215, 0, 0.9); /* More transparency on hover */
+  color: #ff66b2; 
+}
+
+.candy-ui-placeholder-slp:hover {
+  color: #ff66b2;
+}
+
+.candy-ui-placeholder-sbch:hover {
+  color: #ff66b2;
 }
 
 /* Footer Styles */

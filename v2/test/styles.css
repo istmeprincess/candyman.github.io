@@ -12,9 +12,13 @@ body {
   text-align: center;
   color: #fff;
   font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-bottom-left-radius: 20px; /* Rounded corners */
+  border-bottom-right-radius: 20px; /* Rounded corners */
+}
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
 }
 
 .nav-items {
@@ -22,6 +26,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
 }
 
 .nav-items li {
@@ -33,6 +38,14 @@ body {
   color: #fff;
   font-weight: bold;
   font-size: 1rem;
+  border-radius: 10px; /* Rounded corners */
+  padding: 8px 15px; /* Padding for a softer look */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.nav-items a:hover {
+  background-color: #ff3385; /* Lighter pink on hover */
+  color: #fff;
 }
 
 .candy-container {

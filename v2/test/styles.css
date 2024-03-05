@@ -6,6 +6,11 @@ body {
   color: #333; /* Dark gray text color */
 }
 
+*::selection {
+  background-color: transparent;
+  color: #ff66b2;
+}
+
 /* Navbar Styles */
 .navbar {
   background-color: rgba(255, 255, 255, 0.8); /* White with some transparency */

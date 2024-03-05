@@ -106,7 +106,7 @@ body {
 
 /* Candy UI Placeholder Styles */
 .candy-ui-placeholder {
-  background-color: rgba(255, 215, 0, 0.8); /* Gold with some transparency */
+  background-color: grey; /* Gold with some transparency */
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
@@ -114,6 +114,7 @@ body {
   text-align: center;
   color: #333;
   transition: color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .candy-ui-placeholder-slp {
@@ -125,6 +126,7 @@ body {
   text-align: center;
   color: #333;
   transition: color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .candy-ui-placeholder-sbch {
@@ -136,6 +138,11 @@ body {
   text-align: center;
   color: #333;
   transition: color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.content-section:hover .candy-ui-placeholder {
+  background-color: rgba(255, 215, 0, 0.8);
 }
 
 .candy-ui-placeholder:hover {

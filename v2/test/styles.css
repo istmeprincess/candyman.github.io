@@ -86,8 +86,17 @@ body {
   transition: color 0.3s; /* Smooth transition for heading color */
 }
 
+.content-section p {
+  color: #ff66b2;
+  transition: color 0.3s;
+}
+
 .content-section:hover h2 {
   color: #333; /* Dark gray heading color on hover */
+}
+
+.content-section:hover p {
+  color: #ff66b2;
 }
 
 /* Candy UI Placeholder Styles */

@@ -56,6 +56,9 @@ body {
 }
 
 .candy-container {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +72,24 @@ body {
   background-color: rgba(255, 255, 255, 0.8); /* White with some transparency */
   padding: 20px;
   border-radius: 10px;
+}
+
+.peeping-image {
+  position: absolute;
+  top: -20px; /* Adjust the value to control how much the image peeks out from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%; /* Make the image circular for a candy-like appearance */
+  overflow: hidden;
+  width: 100px; /* Set the width of the peeking image */
+  height: 100px; /* Set the height of the peeking image */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow effect */
+}
+
+.peeping-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Token Supply, Chains, and Candy UI Section Styles */

@@ -4,6 +4,19 @@ body {
   font-family: 'Caveat', cursive;
 }
 
+/* Navbar Styles */
+.navbar {
+  background-color: #ff66b2; /* Pink */
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+}
+
 .candy-container {
   position: relative;
   height: 100vh;
@@ -37,4 +50,15 @@ h1 {
 p {
   font-size: 1.5rem;
   color: #ffd700; /* Gold */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

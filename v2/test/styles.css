@@ -108,6 +108,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   color: #333;
+  transition: color 0.3s;
 }
 
 .candy-ui-placeholder-slp {
@@ -118,6 +119,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   color: #333;
+  transition: color 0.3s;
 }
 
 .candy-ui-placeholder-sbch {
@@ -128,6 +130,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   color: #333;
+  transition: color 0.3s;
 }
 
 .candy-ui-placeholder:hover {

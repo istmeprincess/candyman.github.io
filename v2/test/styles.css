@@ -62,3 +62,13 @@ p {
   bottom: 0;
   width: 100%;
 }
+
+/* ... (Previous styles remain unchanged) ... */
+
+.candy-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ... (Previous styles remain unchanged) ... */

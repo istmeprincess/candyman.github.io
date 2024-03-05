@@ -18,17 +18,6 @@ body {
   font-family: 'Dancing Script', cursive;
 }
 
-.candy-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
-}
-
-.candy-content {
-  text-align: center;
-  color: #333; /* Dark gray text color */
-}
 
 h1 {
   font-size: 3rem;
@@ -42,16 +31,7 @@ p {
   color: #555; /* Medium gray text color */
 }
 
-/* Footer Styles */
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+
 /* ... (Previous styles remain unchanged) ... */
 
 /* Navbar Styles */
@@ -84,8 +64,38 @@ p {
   font-size: 1rem;
 }
 
+
+.content-section {
+  margin: 40px 0;
+}
+
+/* ... (Previous styles remain unchanged) ... */
+
+.candy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh; /* Adjusted minimum height */
+}
+
+.candy-content {
+  text-align: center;
+  color: #333; /* Dark gray text color */
+  max-width: 600px; /* Added maximum width for better readability */
+  margin: 0 auto; /* Centering the content */
+}
+
+/* Token Supply, Chains, and Candy UI Section Styles */
+.content-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff; /* White background for content sections */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Candy UI Placeholder Styles */
 .candy-ui-placeholder {
-  /* Placeholder styles for Candy UI section */
   background-color: #ffd700; /* Gold */
   padding: 20px;
   border-radius: 10px;
@@ -95,6 +105,15 @@ p {
   color: #333;
 }
 
-.content-section {
-  margin: 40px 0;
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px; /* Increased padding for better separation */
+  position: relative; /* Position relative for z-index to work */
+  z-index: 1; /* Ensures the footer stays above content */
+  clear: both; /* Clears both left and right floats */
 }
+
+/* ... (Previous styles remain unchanged) ... */

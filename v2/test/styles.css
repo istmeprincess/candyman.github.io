@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Caveat', cursive;
+  background-color: #f9f9f9; /* Light gray background */
 }
 
 /* Navbar Styles */
@@ -18,26 +19,15 @@ body {
 }
 
 .candy-container {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.candy-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
 }
 
 .candy-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color: #333; /* Dark gray text color */
 }
 
 h1 {
@@ -49,7 +39,7 @@ h1 {
 
 p {
   font-size: 1.5rem;
-  color: #ffd700; /* Gold */
+  color: #555; /* Medium gray text color */
 }
 
 /* Footer Styles */
@@ -62,13 +52,3 @@ p {
   bottom: 0;
   width: 100%;
 }
-
-/* ... (Previous styles remain unchanged) ... */
-
-.candy-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* ... (Previous styles remain unchanged) ... */

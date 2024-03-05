@@ -12,35 +12,6 @@ body {
   text-align: center;
   color: #fff;
   font-size: 1.5rem;
-}
-
-.logo {
-  font-family: 'Dancing Script', cursive;
-}
-
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  font-family: 'Dancing Script', cursive;
-  color: #ff66b2; /* Pink */
-}
-
-p {
-  font-size: 1.5rem;
-  color: #555; /* Medium gray text color */
-}
-
-
-/* ... (Previous styles remain unchanged) ... */
-
-/* Navbar Styles */
-.navbar {
-  background-color: #ff66b2; /* Pink */
-  padding: 15px;
-  text-align: center;
-  color: #fff;
-  font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,13 +35,6 @@ p {
   font-size: 1rem;
 }
 
-
-.content-section {
-  margin: 40px 0;
-}
-
-/* ... (Previous styles remain unchanged) ... */
-
 .candy-container {
   display: flex;
   align-items: center;
@@ -92,6 +56,21 @@ p {
   background-color: #fff; /* White background for content sections */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.content-section:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Heading Color Change on Hover */
+.content-section h2 {
+  color: #333; /* Default heading color */
+  transition: color 0.3s; /* Smooth transition for heading color */
+}
+
+.content-section:hover h2 {
+  color: #ff66b2; /* Pink heading color on hover */
 }
 
 /* Candy UI Placeholder Styles */
@@ -103,6 +82,10 @@ p {
   font-size: 1.2rem;
   text-align: center;
   color: #333;
+}
+
+.candy-ui-placeholder:hover {
+  background-color: #ffe57f; /* Lighter gold on hover */
 }
 
 /* Footer Styles */

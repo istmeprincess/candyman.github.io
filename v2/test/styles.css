@@ -111,23 +111,23 @@ body {
 }
 
 .candy-ui-placeholder-slp {
-  background-color: rgba(255, 215, 0, 0.8); /* Gold with some transparency */
+  background-color: #7CFC00; /* Gold with some transparency */
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
   font-size: 1.2rem;
   text-align: center;
-  color: #7CFC00;
+  color: #333;
 }
 
 .candy-ui-placeholder-sbch {
-  background-color: rgba(255, 215, 0, 0.8); /* Gold with some transparency */
+  background-color: #DFFF00; /* Gold with some transparency */
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
   font-size: 1.2rem;
   text-align: center;
-  color: #DFFF00;
+  color: #333;
 }
 
 .candy-ui-placeholder:hover {

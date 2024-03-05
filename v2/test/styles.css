@@ -4,6 +4,7 @@ body {
   font-family: 'Caveat', cursive;
   background: linear-gradient(135deg, #ff66b2, #ffd700); /* Cute candies gradient background */
   color: #333; /* Dark gray text color */
+  transition: background-color 0.5s; /* Smooth transition for background color */
 }
 
 /* Navbar Styles */
@@ -15,12 +16,28 @@ body {
   font-size: 1.5rem;
   border-bottom-left-radius: 20px; /* Rounded corners */
   border-bottom-right-radius: 20px; /* Rounded corners */
+  transition: background-color 0.5s, color 0.5s; /* Smooth transitions */
 }
 
+/* Add a subtle hover effect on the navbar */
+.navbar:hover {
+  background-color: #fff; /* White background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Logo Animation */
 .logo {
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
   color: #ff66b2; /* Pink logo color */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.navbar:hover .logo {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .nav-items {
@@ -31,8 +48,17 @@ body {
   justify-content: center;
 }
 
+/* Navigation Items Animation */
 .nav-items li {
   margin-right: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.navbar:hover .nav-items li {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .nav-items a {
@@ -55,6 +81,15 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 70vh; /* Adjusted minimum height */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Candy Container Animation */
+.candy-container.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .candy-content {
@@ -64,6 +99,15 @@ body {
   background-color: rgba(255, 255, 255, 0.8); /* White with some transparency */
   padding: 20px;
   border-radius: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s, transform 0.5s, background-color 0.5s;
+}
+
+/* Candy Content Animation */
+.candy-container.show .candy-content {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Token Supply, Chains, and Candy UI Section Styles */
@@ -73,17 +117,21 @@ body {
   background-color: rgba(255, 255, 255, 0.9); /* White with more transparency */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  transition: background-color 0.5s; /* Smooth transition for background color */
+  opacity: 0;
+  transform: translateY(-20px);
 }
 
-.content-section:hover {
-  background-color: rgba(255, 255, 255, 0.95); /* Even more transparency on hover */
+/* Content Section Animation */
+.candy-container.show .content-section {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* Heading Color Change on Hover */
+/* Heading Color Change on Hover Animation */
 .content-section h2 {
   color: #ff66b2; /* Pink heading color */
-  transition: color 0.3s; /* Smooth transition for heading color */
+  transition: color 0.5s; /* Smooth transition for heading color */
 }
 
 .content-section:hover h2 {
@@ -99,6 +147,15 @@ body {
   font-size: 1.2rem;
   text-align: center;
   color: #333;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s, transform 0.5s, background-color 0.5s;
+}
+
+/* Candy UI Placeholder Animation */
+.candy-container.show .candy-ui-placeholder {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .candy-ui-placeholder:hover {
@@ -114,6 +171,13 @@ body {
   position: relative; /* Position relative for z-index to work */
   z-index: 1; /* Ensures the footer stays above content */
   clear: both; /* Clears both left and right floats */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s, transform 0.5s, background-color 0.5s;
 }
 
-/* ... (Previous styles remain unchanged) ... */
+/* Footer Animation */
+.candy-container.show .footer {
+  opacity: 1;
+  transform: translateY(0);
+}
